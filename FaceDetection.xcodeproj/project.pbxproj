@@ -13,9 +13,6 @@
 		0FA0C8B6280F5C40005FF0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0C8B4280F5C40005FF0EC /* Main.storyboard */; };
 		0FA0C8B8280F5C42005FF0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0C8B7280F5C42005FF0EC /* Assets.xcassets */; };
 		0FA0C8BB280F5C42005FF0EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA0C8B9280F5C42005FF0EC /* LaunchScreen.storyboard */; };
-		0FA0C8C6280F5C42005FF0EC /* FaceDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8C5280F5C42005FF0EC /* FaceDetectionTests.swift */; };
-		0FA0C8D0280F5C42005FF0EC /* FaceDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8CF280F5C42005FF0EC /* FaceDetectionUITests.swift */; };
-		0FA0C8D2280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */; };
 		0FA0C8E4280FB2F7005FF0EC /* FaceCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */; };
 		0FA0C8E7280FB35E005FF0EC /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */; };
 /* End PBXBuildFile section */
@@ -47,10 +44,7 @@
 		0FA0C8BA280F5C42005FF0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA0C8BC280F5C42005FF0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA0C8C1280F5C42005FF0EC /* FaceDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FA0C8C5280F5C42005FF0EC /* FaceDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionTests.swift; sourceTree = "<group>"; };
 		0FA0C8CB280F5C42005FF0EC /* FaceDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FA0C8CF280F5C42005FF0EC /* FaceDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionUITests.swift; sourceTree = "<group>"; };
-		0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCounterViewModel.swift; sourceTree = "<group>"; };
 		0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				0FA0C8AD280F5C40005FF0EC /* FaceDetection */,
-				0FA0C8C4280F5C42005FF0EC /* FaceDetectionTests */,
-				0FA0C8CE280F5C42005FF0EC /* FaceDetectionUITests */,
 				0FA0C8AC280F5C40005FF0EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,23 +101,6 @@
 				0FA0C8E0280FB26F005FF0EC /* Supporting Files */,
 			);
 			path = FaceDetection;
-			sourceTree = "<group>";
-		};
-		0FA0C8C4280F5C42005FF0EC /* FaceDetectionTests */ = {
-			isa = PBXGroup;
-			children = (
-				0FA0C8C5280F5C42005FF0EC /* FaceDetectionTests.swift */,
-			);
-			path = FaceDetectionTests;
-			sourceTree = "<group>";
-		};
-		0FA0C8CE280F5C42005FF0EC /* FaceDetectionUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0FA0C8CF280F5C42005FF0EC /* FaceDetectionUITests.swift */,
-				0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */,
-			);
-			path = FaceDetectionUITests;
 			sourceTree = "<group>";
 		};
 		0FA0C8E0280FB26F005FF0EC /* Supporting Files */ = {
@@ -308,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA0C8C6280F5C42005FF0EC /* FaceDetectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA0C8D0280F5C42005FF0EC /* FaceDetectionUITests.swift in Sources */,
-				0FA0C8D2280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
