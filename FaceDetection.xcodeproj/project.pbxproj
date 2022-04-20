@@ -16,6 +16,8 @@
 		0FA0C8C6280F5C42005FF0EC /* FaceDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8C5280F5C42005FF0EC /* FaceDetectionTests.swift */; };
 		0FA0C8D0280F5C42005FF0EC /* FaceDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8CF280F5C42005FF0EC /* FaceDetectionUITests.swift */; };
 		0FA0C8D2280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */; };
+		0FA0C8E4280FB2F7005FF0EC /* FaceCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */; };
+		0FA0C8E7280FB35E005FF0EC /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0FA0C8CB280F5C42005FF0EC /* FaceDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA0C8CF280F5C42005FF0EC /* FaceDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionUITests.swift; sourceTree = "<group>"; };
 		0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCounterViewModel.swift; sourceTree = "<group>"; };
+		0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,10 @@
 		0FA0C8AD280F5C40005FF0EC /* FaceDetection */ = {
 			isa = PBXGroup;
 			children = (
-				0FA0C8AE280F5C40005FF0EC /* AppDelegate.swift */,
-				0FA0C8B0280F5C40005FF0EC /* SceneDelegate.swift */,
-				0FA0C8B2280F5C40005FF0EC /* ViewController.swift */,
-				0FA0C8B4280F5C40005FF0EC /* Main.storyboard */,
-				0FA0C8B7280F5C42005FF0EC /* Assets.xcassets */,
-				0FA0C8B9280F5C42005FF0EC /* LaunchScreen.storyboard */,
-				0FA0C8BC280F5C42005FF0EC /* Info.plist */,
+				0FA0C8E5280FB33E005FF0EC /* View */,
+				0FA0C8E2280FB2DC005FF0EC /* ViewModel */,
+				0FA0C8E1280FB2C3005FF0EC /* ViewControllers */,
+				0FA0C8E0280FB26F005FF0EC /* Supporting Files */,
 			);
 			path = FaceDetection;
 			sourceTree = "<group>";
@@ -125,6 +126,43 @@
 				0FA0C8D1280F5C42005FF0EC /* FaceDetectionUITestsLaunchTests.swift */,
 			);
 			path = FaceDetectionUITests;
+			sourceTree = "<group>";
+		};
+		0FA0C8E0280FB26F005FF0EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0C8AE280F5C40005FF0EC /* AppDelegate.swift */,
+				0FA0C8B0280F5C40005FF0EC /* SceneDelegate.swift */,
+				0FA0C8BC280F5C42005FF0EC /* Info.plist */,
+				0FA0C8B4280F5C40005FF0EC /* Main.storyboard */,
+				0FA0C8B7280F5C42005FF0EC /* Assets.xcassets */,
+				0FA0C8B9280F5C42005FF0EC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA0C8E1280FB2C3005FF0EC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0C8B2280F5C40005FF0EC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0FA0C8E2280FB2DC005FF0EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FA0C8E5280FB33E005FF0EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA0C8E4280FB2F7005FF0EC /* FaceCounterViewModel.swift in Sources */,
+				0FA0C8E7280FB35E005FF0EC /* AlertsView.swift in Sources */,
 				0FA0C8B3280F5C40005FF0EC /* ViewController.swift in Sources */,
 				0FA0C8AF280F5C40005FF0EC /* AppDelegate.swift in Sources */,
 				0FA0C8B1280F5C40005FF0EC /* SceneDelegate.swift in Sources */,
@@ -439,18 +479,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2RH2V33K5A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FaceDetection/Info.plist;
+				INFOPLIST_FILE = "FaceDetection/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required for face detection";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovid.zksync.FaceDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rideFlag.FaceDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,18 +509,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2RH2V33K5A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FaceDetection/Info.plist;
+				INFOPLIST_FILE = "FaceDetection/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required for face detection";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ovid.zksync.FaceDetection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rideFlag.FaceDetection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
