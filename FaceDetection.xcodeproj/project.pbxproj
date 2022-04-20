@@ -47,6 +47,7 @@
 		0FA0C8CB280F5C42005FF0EC /* FaceDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA0C8E3280FB2F7005FF0EC /* FaceCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCounterViewModel.swift; sourceTree = "<group>"; };
 		0FA0C8E6280FB35E005FF0EC /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		0FC2510D28105FF6005D0D12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		0FA0C8A2280F5C40005FF0EC = {
 			isa = PBXGroup;
 			children = (
+				0FC2510D28105FF6005D0D12 /* README.md */,
 				0FA0C8AD280F5C40005FF0EC /* FaceDetection */,
 				0FA0C8AC280F5C40005FF0EC /* Products */,
 			);
